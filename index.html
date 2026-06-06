@@ -5,7 +5,7 @@
 
 <style>
 
-body {font-family: Arial;}
+body {font-family: system-ui;}
 
 body {background-color: #EDF8FF}
   
@@ -24,12 +24,12 @@ td{
   padding: 8px;
 }
 th:nth-child(even),td:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: #B8E8FF;
 }
 
 
 /* Style the header */
-header {
+h1, h2 {
   padding: 30px;
   text-align: center;
 }
@@ -37,8 +37,8 @@ header {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid #229FFF;
+  background-color: #A5D8FF;
 }
 
 /* Style the buttons inside the tab */
@@ -55,19 +55,19 @@ header {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #008FD1;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #008FD1;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: none;
+  border: 1px solid #229FFF;
   border-top: none;
 }
 
@@ -82,8 +82,10 @@ header {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: #7DD5FF; /* Fallback color */
+  background-color: #2EBDFF; 
+  border: none !important;
+  font: inherit;
 }
 
 /* Modal Content */

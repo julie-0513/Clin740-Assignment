@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
-body {font-family: Tahoma, sans-serif;}
+body {font-family: Arial;}
 
 body {background-color: #EDF8FF}
   
@@ -30,21 +29,16 @@ th:nth-child(even),td:nth-child(even) {
 
 
 /* Style the header */
-h1 {
+header {
   padding: 30px;
   text-align: center;
 }
-
-h2 {
-  padding: 30px;
-  text-align: center;
-}
-
+  
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #229FFF;
-  background-color: #A5D8FF;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
@@ -61,22 +55,22 @@ h2 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #008FD1;
+  background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #008FD1;
+  background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #229FFF;
+  border: none;
   border-top: none;
 }
-  
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -88,7 +82,8 @@ h2 {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: none /* Fallback color */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -117,8 +112,8 @@ h2 {
 </style>
 </head>
 <body>
-    <h1 style="background-color:#0066A5;color:#FFFFFF">Ischemic Stroke</h1>
-    <h2 style="background-color: #31B0FF>A Radiographers Guide in Clinical Decision Making</h2>
+    <h1>Ischemic Stroke</h1>
+    <h2>A Radiographers Guide to Clinical Decision Making</h2>
 
 <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Intro')">Introduction</button>
